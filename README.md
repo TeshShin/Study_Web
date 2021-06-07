@@ -3,4 +3,4 @@ This repository is my first task in creating a website.
 <a href="https://shintom1222.github.io/Study_Web/" target="_blank" title="Shintom1222's Study Website">My page of studying web</a>
 
 # style tag
-<img src="style.png" width="100%">
+<img src="style.PNG" width="100%">
