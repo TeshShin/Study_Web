@@ -4,3 +4,4 @@ This repository is my first task in creating a website.
 
 # Style tag
 <img src="style.PNG" width="100%">
+Selector : 선택자, Declaration : 선언, Property : 속성, Value : 속성의 값
