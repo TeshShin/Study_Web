@@ -11,3 +11,4 @@ Selector : 선택자, Declaration : 선언, Property : 속성, Value : 속성의
 2. ID는 #선택자이름{}, ID="선택자이름"
 3. 우선순위 ID > class > 일반태그 이다.
 4. 헤더들은 block level element이다. 일반태그들은 inline element이다. 이들의 속성은 display로 수정가능하다.
+5. 아무 의미없는 태그인 div와 span이 있다. div는 block level element이고 span은 inline element의 속성을 가지고 있다.
