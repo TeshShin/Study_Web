@@ -18,4 +18,4 @@ Selector : 선택자, Declaration : 선언, Property : 속성, Value : 속성의
 
 ## Stylesheet 이용하기
 .css파일을 만들어 스타일태그안의 내용을 넣고<br>
-'<link rel="stylesheet" href="style.css">'의 형식으로 본래있던 <style>...</style>의 위치에 이를 넣으면 된다.
+<link rel=파일형식 href=파일명>의 형식으로 본래있던 <style>...</style>의 위치에 이를 넣으면 된다.
