@@ -14,11 +14,25 @@
       target.style.color = 'white';
       target.style.borderColor = 'white';
       this.value = 'day';
+      
+      var alist = document.querySelectorAll('a');
+      var i = 0;
+      while (i < alist.length) {
+        alist[i].style.color = 'lightgreen'
+        i = i + 1;
+      }
     } else{
       target.style.backgroundColor = 'white';
       target.style.color = 'black';
       target.style.borderColor = 'black';
       this.value = 'night';
+
+      var alist = document.querySelectorAll('a');
+      var i = 0;
+      while (i < alist.length) {
+        alist[i].style.color = 'mediumaquamarine'
+        i = i + 1;
+      }
     }
   ">
   <div id="grid">
