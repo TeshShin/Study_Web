@@ -7,19 +7,19 @@
 </head>
 <body>
   <h1><a href="index.html">WEB</a></h1>
-  <input id="night_day" type="button" value="night" onclick="
-    if(document.querySelector('#night_day').value === 'night'){
-      document.querySelector('body').style.backgroundColor = 'black';
-      document.querySelector('body').style.color = 'white';
-      document.querySelector('body').style.borderColor = 'white';
-      document.querySelector('#night_day').value = 'day';
+  <input type="button" value="night" onclick="
+    var target = document.querySelector('body');
+    if(this.value === 'night'){
+      target.style.backgroundColor = 'black';
+      target.style.color = 'white';
+      target.style.borderColor = 'white';
+      this.value = 'day';
     } else{
-      document.querySelector('body').style.backgroundColor = 'white';
-      document.querySelector('body').style.color = 'black';
-      document.querySelector('body').style.borderColor = 'black';
-      document.querySelector('#night_day').value = 'night';
+      target.style.backgroundColor = 'white';
+      target.style.color = 'black';
+      target.style.borderColor = 'black';
+      this.value = 'night';
     }
-  
   ">
   <div id="grid">
     <ol>
