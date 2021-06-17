@@ -19,3 +19,8 @@ Selector : 선택자, Declaration : 선언, Property : 속성, Value : 속성의
 ## Stylesheet 이용하기
 .css파일을 만들어 스타일태그안의 내용을 넣고<br>
 "link rel=파일형식 href=파일명"의 형식으로 본래있던 <style>...</style>의 위치에 이를 넣으면 된다.
+
+## library VS framework
+Library : 뭔가를 만들 때 당겨와서 쓰는 느낌<br>
+Framework : 안에 들어가서 작업하는 방법<br>
+JS에서는 jQuery라는 것이 있다.
