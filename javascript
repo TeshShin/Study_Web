@@ -1,0 +1,1 @@
+<h2>javascript</h2>javascript is Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil assumenda aliquam adipisci amet sed! Modi, reiciendis animi! Ea sapiente magnam illo nihil esse, commodi dolorem iusto accusantium sint fugit eaque!
