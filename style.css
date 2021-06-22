@@ -16,7 +16,7 @@ body{
     border-right: 1px solid gray;
     width:100px;
     margin:0;
-    padding: 20px;
+    padding: 10px;
   }
   #grid{
     display: grid;
