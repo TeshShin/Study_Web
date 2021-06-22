@@ -11,12 +11,14 @@
   <input id="night_day" type="button" value="night" onclick="
     nightDayHandler(this);
   ">
-  <ol id="nav">
+  <div id="grid">
+    <ol id="nav">
  
-  </ol>
-  <article>
- 
-  </article>
+    </ol>
+    <article>
+   
+    </article>
+  </div>
   <script>
   function fetchPage(name){
     fetch(name).then(function(response){
