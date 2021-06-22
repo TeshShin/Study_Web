@@ -11,10 +11,8 @@
     <input id="night_day" type="button" value="night" onclick="
       nightDayHandler(this);
     ">
-    <ol>
-      <li><a href="#!html" onclick="fetchPage('html')">HTML</a></li>
-      <li><a href="#!css" onclick="fetchPage('css')">CSS</a></li>
-      <li><a href="#!javascript" onclick="fetchPage('javascript')">JavaScript</a></li>
+    <ol id="nav">
+      
     </ol>
     <article>
     
@@ -32,6 +30,22 @@
     } else{
       fetchPage('welcome');
     }
+    fetch('list').then(function(response){
+      response.text().then(function(text){
+        var items = text.split(',');
+        var i = 0;
+        var tags = '';
+        while (i<items.length) {
+          var item = items[i];
+          item = item.trim();
+          //<li><a href="#!html" onclick="fetchPage('html')">HTML</a></li>
+          var tag = '<li><a href ="#!'+item+'" onclick="fetchPage(\''+item+'\')">'+item+'</a></li>';
+          tags = tags + tag;
+          i = i + 1;
+        }
+        document.querySelector('#nav').innerHTML = text;
+      })
+    });
     </script>
   </body>
 </html>
