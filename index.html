@@ -6,6 +6,22 @@
   <link rel="stylesheet" href="style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="colors.js"></script>
+  <script>
+    window.fbAsyncInit = function() {
+      FB.init({
+        appId      : '2598100903828892',
+        cookie     : true,                     // Enable cookies to allow the server to access the session.
+        xfbml      : true,                     // Parse social plugins on this webpage.
+        version    : 'v11.0'           // Use this Graph API version for this call.
+      });
+      var callback = function(response) {
+        console.log(response);
+        // statusChangeCallback(response);
+      }
+      FB.getLoginStatus(callback);
+    };
+  </script>
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
 </head>
 <body>
   <h1><a href="#!welcome">WEB</a></h1>
