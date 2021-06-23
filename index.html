@@ -12,13 +12,8 @@
       console.log(response);                   // The current login status of the person.
       if (response.status === 'connected') {   // Logged into your webpage and Facebook.
         testAPI();  
-        FB.api('/me', function(resp) {
-          document.querySelector('#name').innerHTML = '안녕 ! '+ resp.name;
-        })
       } else {                                 // Not logged into your webpage or we are unable to tell.
-        document.getElementById('status').innerHTML = 'Please log ' +
-          'into this webpage.';
-        document.querySelector('#name').innerHTML = '';
+        document.getElementById('status').innerHTML = '로그인 해주세요';
       }
     }
     function checkLoginState() {               // Called when a person is finished with the Login Button.
@@ -42,7 +37,7 @@
       FB.api('/me', function(response) {
         console.log('Successful login for: ' + response.name);
         document.getElementById('status').innerHTML =
-          'Thanks for logging in, ' + response.name + '!';
+          '안녕 ! ' + response.name + ' !';
       });
     }
   </script>
@@ -52,7 +47,7 @@
   <div id="fb-root"></div>
   <script async defer crossorigin="anonymous" src="https://connect.facebook.net/ko_KR/sdk.js#xfbml=1&version=v11.0&appId=2598100903828892&autoLogAppEvents=1" nonce="SddrBkGp"></script>
   <div class="fb-login-button" data-width="" data-size="large" data-button-type="login_with" data-layout="rounded" data-auto-logout-link="true" data-use-continue-as="false"></div>
-  <div id="name"></div>
+  <div id="status"></div>
   <h1><a href="#!welcome">WEB</a></h1>
   <input id="night_day" type="button" value="night" onclick="
     nightDayHandler(this);
